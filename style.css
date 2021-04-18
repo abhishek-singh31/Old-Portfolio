@@ -155,7 +155,6 @@ img{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* height:28vh; */
 }
 
 #contact h1{
@@ -194,7 +193,17 @@ img{
     transition:0.5s;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:700px) {
+    .project-grid{
+        margin-top:20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:950px) {
     #navbar{
         justify-content: flex-end;
     }
